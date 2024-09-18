@@ -13,6 +13,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import UserDetails from './components/UserDetails/UserDetails.jsx'
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
 
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement :<ErrorPage></ErrorPage>,
     children: [
       {
         path: '/about',
